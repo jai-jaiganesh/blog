@@ -1,0 +1,39 @@
+
+<%- include("partials/header"); -%>
+<section id="opening">
+<h4 style="text-align: center;"><span>Read Others Blogs</span></h4>
+
+<div class="container">
+
+<%  posts.forEach(function(post){ %>
+<div>
+<h1><%=post.title%></h1>
+
+
+   <% if(post.content.length < 40 && post.img!="" ){ %>
+   
+    <img src="/uploads/image/<%=post.img %>"/>
+    <h5><%= post.name %></h5>
+
+    <p><%=post.content%></p>
+    <% } %>
+      
+    
+<% if(post.content.length > 40 ){ %>
+  <p><%=post.content.substring(0, 100) + " ..."%><a href="/posts/<%=post._id%>">Read More</a>
+  </p>
+<% } %>
+  
+
+
+</div>
+<hr>
+
+<% }) %>
+
+<a href="/compose">
+  <i class="fa fa-plus-circle"></i></a>
+</div>
+</section>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-621c69c5321a2225"></script>

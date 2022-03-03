@@ -1,0 +1,30 @@
+
+<%- include("partials/header1"); -%>
+    <section id="post">
+
+    <form class="compose" action="/compose" method="post" enctype="multipart/form-data">
+      <h3 style="text-align: center;"><span>share Your Blog anonymously</span></h3>
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" size="25" name="postTitle">
+        <label>Post</label>
+        <textarea class="form-control" name="postBody" size="25"  rows="5" cols="30"></textarea>
+        <div>
+          <label for="name">Image Title</label>
+          <input type="text" id="name" placeholder="Name" 
+                 value="" name="name" >
+      </div>
+        <div>
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" 
+                 name="image" value="" >
+      </div>
+      </div>
+      <div>
+      <button class="btn " type="submit" name="button">Publish</button>
+    </div>
+    </form>
+  </section>
+
+
+<%- include("partials/footer1"); -%>

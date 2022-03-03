@@ -1,0 +1,180 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.fa-plus-circle{
+  
+  color:#FFAFAF;
+  font-size:50px;
+  /* margin-right: 2%;
+  margin-left:70%;
+  margin-top: 30%; */
+  bottom: 12%;
+  margin-left:70%;
+   position: absolute;  
+}
+.btn-google:hover{
+  color:orange;
+}
+.md-form{
+  margin-top:1%;
+  margin-left: 1%;
+}
+
+.fas{
+  color:#FFAFAF;
+  font-size:35px;
+}
+.tag{
+  padding-bottom: 14%;
+}
+.compose{
+ 
+  margin-left:15% ;
+  margin-right: 15%;
+}
+ #content,#post{
+ 
+  font-weight: bolder;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+} 
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.home{
+  margin-left:15%;
+  margin-right:15%;
+  font-size:x-large;
+  font-weight: bolder;
+  padding-top: 1%;
+}
+.nav-link{
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+
+  }
+  .nav-link:hover{
+    color:orange;
+  }
+  .navbar-expand-lg{
+   /* background-image: -webkit-linear-gradient(
+  0deg,#766dff 0%,#88f3ff 100%);  */
+  background-color:#FFAFAF;
+  height:auto;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bolder;
+  }
+.btn-google{
+  background-color: red;
+  color:white;
+}
+
+  
+  #opening,#contact{
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  .mask{
+    padding-top:2%;
+    height:auto;
+    background-color:#FFAFAF;
+    padding-bottom: 2%;
+  }
+  
+  .collapse{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+  }
+
+.heading,.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+img{
+ max-width:200px;
+  /* object-fit: contain; */
+  /* max-width:10px ;
+  max-height:10px; */
+} 
+.gradient-custom-3{
+  height:90vh;
+}
+ 
+span{
+  background-color: #FFAFAF;
+ color:white;
+ letter-spacing: 2px;
+  font-weight: bolder;
+  padding:1% 2%;
+  text-transform: uppercase;
+}
+
+
+ .footer-padding {
+	
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    /* background-color:#EEEDDE; */
+    background-color: #FFAFAF;
+    text-align: center;
+
+ 
+} 
+.footer-padding1{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  /* background-color:#EEEDDE; */
+  background-color: #FFAFAF;
+  text-align: center;
+}
+
+.container{
+   max-width: 900px;
+  margin: auto; 
+  font-size:25px;
+  letter-spacing: 2px;
+font-weight:lighter;
+  
+}
+.button{
+  margin-left: 17.5%; 
+  font-size:20px;
+font-weight: bolder;
+}
+#login{
+ /* padding-bottom:50%; */
+}
+#contact{
+  background-color: #ECECEC;
+  
+}
+ @media screen and (max-width:1200px) {
+  
+    .tag{
+      padding-bottom: 8%;
+    }
+    .md-form{
+      margin-top:2%;
+      margin-left: 2%;
+    }
+    .fa-plus-circle{
+      bottom: 12%;
+      margin-right:1%;
+    }
+    .text-uppercase{
+      font-size:18px;
+      font-weight: bolder;
+    }
+} 

@@ -1,0 +1,137 @@
+<%- include("partials/header3"); -%>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("GeZK9cyQNFoybRv69");
+})();
+</script>
+   <script>
+     function sendEmail(params){
+       var temp ={
+         fromName:document.getElementById("fromName").value,
+         toName:document.getElementById("toName").value,
+         message:document.getElementById("message").value,
+       };
+       emailjs.send('service_ev4p4lh','template_v2mbbxe',temp)
+       .then(function(res){
+         console.log("success",res.status);
+       })
+     }
+   </script> 
+    
+    <section id="opening">
+     
+      <nav class="navbar navbar-expand-lg   ">
+      <h2> CONTACT US.. </h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="	fa fa-th-list"></i>
+            </button>
+        <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+          <div class="navbar-nav  ">
+            <a class="nav-item nav-link " href="https://www.instagram.com/j.jai__/"><i class="fa fa-fw fa-instagram"></i></a>
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/jaiganesh-j-6868041b0/"><i class="fa fa-fw fa-linkedin"></i></a>
+            <a class="nav-item nav-link" href="https://twitter.com/JaiJ40076622"><i class="fa fa-fw fa-twitter"></i></a>
+
+          </div>
+        </div>
+      </nav>
+   
+    </section>
+
+    
+<section class="mb-4">
+
+
+  <h2 class="h1-responsive font-weight-bold text-center my-4">CONTACT US</h2>
+
+  <div class="row">
+
+      <div class="col-md-8 mb-md-0 mb-5">
+          <form >
+
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <label  class=""><h6>YOUR NAME</h6></label>
+
+                          <input type="text" id="fromName" name="name" class="form-control">
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <label class=""><h6>YOUR EMAIL</h6></label>
+
+                          <input type="text" id="toName" name="email" class="form-control">
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <label for="subject" class=""><h6>SUBJECT</h6></label>
+
+                          <input type="text" id="subject" name="subject" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                        <label for="message"><h5>YOUR MESSAGE</h5></label>
+
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+              <div class="text-center text-md-left">
+                <button style="background-color: #FFAFAF;margin-top:2%;  margin-left: 1%;
+                " onclick="sendEmail()">Submit</button>
+
+            </div>
+          </form>
+
+         
+        
+      </div>
+     
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-location-arrow fas-2x"></i></i>
+                  <h5 class="tag">Arani,Tamilnadu</h5>
+              </li>
+
+              <li><i class="fas fa-mobile-alt"></i></i>
+                  <h5 class="tag">+91 9629980277</h5>
+              </li>
+
+              <li><i class="fas fa-mail-bulk"></i></i>
+                  <h5 class="tag">jg.jaiaganesh3006@gmail.com</h5>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+  <%- include("partials/footer1"); -%>
