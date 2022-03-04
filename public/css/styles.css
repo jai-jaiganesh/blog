@@ -144,9 +144,25 @@ span{
    max-width: 900px;
   margin: auto; 
   font-size:25px;
-  letter-spacing: 2px;
 font-weight:lighter;
   
+}
+.container1{
+  max-width: 1000px;
+ margin: auto; 
+ font-size:25px;
+ letter-spacing: 2px;
+font-weight:lighter;
+ 
+}
+.container2{
+  max-width: 1200px;
+ margin: auto; 
+ font-size:25px;
+ letter-spacing: 2px;
+font-weight:lighter;
+height:100vh;
+ 
 }
 .button{
   margin-left: 17.5%; 
@@ -176,5 +192,8 @@ font-weight: bolder;
     .text-uppercase{
       font-size:18px;
       font-weight: bolder;
+    }
+    .container{
+      m
     }
 } 
