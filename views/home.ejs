@@ -11,12 +11,18 @@
 
 
    <% if(post.content.length < 40 && post.img!="" ){ %>
-   
+
     <img src="/uploads/image/<%=post.img %>"/>
     <h5><%= post.name %></h5>
 
     <p><%=post.content%></p>
     <% } %>
+    <% if(post.content.length < 40 && post.img=="" ){ %>
+
+      <h5><%= post.name %></h5>
+  
+      <p><%=post.content%></p>
+      <% } %>
       
     
 <% if(post.content.length > 40 ){ %>
@@ -35,5 +41,7 @@
   <i class="fa fa-plus-circle"></i></a>
 </div>
 </section>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-621c69c5321a2225"></script>
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-621c69c5321a2225"></script>
+<%- include("partials/footer1"); -%>
