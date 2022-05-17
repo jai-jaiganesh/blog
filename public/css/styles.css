@@ -24,7 +24,9 @@ html,body
   margin-top:1%;
   margin-left: 1%;
 }
-
+.content1{
+	word-break: break-word;
+}
 .fas{
   color:#FFAFAF;
   font-size:35px;
